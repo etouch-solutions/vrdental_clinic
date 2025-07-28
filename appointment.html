@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from html.awaikenthemes.com/dentaire/appointment.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Jul 2025 11:23:28 GMT -->
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Awaiken">
+	<!-- Page Title -->
+    <title>Dentaire - Dentist & Dental Clinic HTML Template</title>
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- SlickNav Css -->
+	<link href="css/slicknav.min.css" rel="stylesheet">
+	<!-- Swiper Css -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<!-- Font Awesome Icon Css-->
+	<link href="css/all.css" rel="stylesheet" media="screen">
+	<!-- Animated Css -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- Magnific Popup Core Css File -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Mouse Cursor Css File -->
+	<link rel="stylesheet" href="css/mousecursor.css">
+	<!-- Main Custom Css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+    <!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+    <!-- Header Start -->
+	<header class="main-header">
+		<div class="header-sticky">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<!-- Logo Start -->
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" alt="Logo">
+					</a>
+					<!-- Logo End -->
+
+					<!-- Main Menu Start -->
+					<div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item "><a class="nav-link" href="index.html">Home</a>
+                                </li>                                
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="appointment.html">book appointment</a></li>                               
+                            </ul>
+                        </div>
+                        <!-- Let’s Start Button Start -->
+                        <div class="header-btn d-inline-flex">
+                            <a href="appointment.html" class="btn-default">Book Appointment</a>
+                        </div>
+                        <!-- Let’s Start Button End -->
+					</div>
+					<!-- Main Menu End -->
+					<div class="navbar-toggle"></div>
+				</div>
+			</nav>
+			<div class="responsive-menu"></div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+    <!-- Page Appointment Start -->
+    <div class="page-book-appointment">
+        <div class="container">
+			<div class="book-appointment-form">
+				<div class="row section-row">
+					<div class="col-lg-12">
+						<!-- Section Title Start -->
+						<div class="section-title">
+							<h3 class="wow fadeInUp">booking</h3>
+							<h2 class="text-anime-style-2" data-cursor="-opaque"><span>Book</span> Appointment</h2>
+						</div>
+						<!-- Section Title End -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="appointment-form wow fadeInUp">
+							<!-- Form Start -->
+							<form id="appointmentForm" action="#" method="POST" data-toggle="validator">
+								<div class="row">
+									<div class="form-group col-md-6 mb-4">
+										<input type="text" name="name" class="form-control" id="name" placeholder="Enter Name" required>
+										<div class="help-block with-errors"></div>
+									</div>
+
+									<div class="form-group col-md-6 mb-4">
+										<input type="email" name ="email" class="form-control" id="email" placeholder="Enter Email" required>
+										<div class="help-block with-errors"></div>
+									</div>
+
+									<div class="form-group col-md-6 mb-4">
+										<input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required>
+										<div class="help-block with-errors"></div>
+									</div>
+
+									<div class="form-group col-md-6 mb-4">
+										<select name="services" class="form-control form-select" id="services" required>
+											<option value="" disabled selected>select service</option>
+											<option value="general_dental_care">general dental care</option>
+											<option value="dental_implants">dental implants</option>
+											<option value="cosmetic_dentistry">cosmetic dentistry</option>
+											<option value="teeth_whitening">teeth whitening</option>
+											<option value="pediatric_dental_care">pediatric dental care</option>
+											<option value="advanced_oral_care">advanced oral care</option>
+											<option value="comfort_dentistry">comfort dentistry</option>
+											<option value="smile_renewal">smile renewal</option>
+										</select>
+										<div class="help-block with-errors"></div>
+									</div>
+
+									<div class="form-group col-md-12 mb-5">
+										<input type="date" name="date" class="form-control" id="date" required>
+										<div class="help-block with-errors"></div>
+									</div>
+
+									<div class="col-md-12">
+										<button type="submit" class="btn-default">book appointment</button>
+										<div id="msgSubmit" class="h3 hidden"></div>
+									</div>
+								</div>
+							</form>
+							<!-- Form End -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- Page Appointment End -->
+
+
+    <!-- Footer Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- About Footer Start -->
+                    <div class="about-footer">
+                        <!-- Footer Logo Start -->
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <!-- Footer Logo End -->
+
+                        <!-- About Footer Content Start -->
+                        <div class="about-footer-content">
+                            <p>"At VR Dental Clinic, our goal is to provide friendly, compassionate care along with the highest standard of general, cosmetic, and specialist dental treatments."</p>
+                         </div>
+                                <div class="social-icons">
+  <a href="https://www.instagram.com/yourpage" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram">
+  </a>
+  <a href="https://www.facebook.com/yourpage" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png" alt="Facebook">
+  </a>
+  <a href="https://wa.me/919095391709" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" alt="whatsapp">
+  </a>
+</div>
+                         <!-- About Footer Content End -->
+                     </div>
+                    <!-- About Footer End -->
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <!-- Footer Quick Links Start -->
+                    <div class="footer-links footer-quick-links">
+                        <h3>quick links</h3>
+                        <ul>                            
+                            <li><a class="nav-link" href="index.html">Home</a></li>
+                            <li><a class="nav-link" href="about.html">About Us</a></li>
+                            <li><a class="nav-link" href="service.html">Services</a></li>
+                            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Quick Links End -->
+                </div>
+
+
+                <div class="col-lg-2 col-md-4">
+                    <!-- Footer Contact Links Start -->
+                   <div class="footer-links footer-contact-links">
+                        <h3>contact us</h3>
+                        <ul>                            
+                            <li><a href="mailto:vrdentalclinic13@gmail.com">vrdentalclinic13@gmail.com</a></li>
+                            <li><a href="tel:9095391709">9095391709</a></li>
+                            <li><a href="tel:9894851715">9894851715</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Contact Links End -->
+                </div>                
+            </div>
+
+            <!-- Footer Copyright Section Start -->
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Footer Copyright Start -->
+                        <div class="footer-copyright-text">
+                            <p>Copyright © 2025 All Rights Reserved.</p>
+                        </div>
+                        <!-- Footer Copyright End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Copyright Section End -->
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+	<script src="../../demo.awaikenthemes.com/assets/js/theme-panel.js"></script>
+</body>
+
+<!-- Mirrored from html.awaikenthemes.com/dentaire/appointment.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Jul 2025 11:23:28 GMT -->
+</html>
